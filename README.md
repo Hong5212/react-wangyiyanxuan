@@ -23,6 +23,57 @@
          }
        },`
 
+## 底部导航
+
+1. 先`components`和`containers`文件夹里面建好对应的文件
+
+2. 在`index.js`( 入口文件 )引入`main.jsx`文件
+
+3. 在`main.jsx`引入`react-router-dom`库里面的`Switch,Route,Redirect`
+
+4. 在`main.jsx`引入相对应的路由，在默认暴露对象里面定义导航数组
+
+5. 导航数组里面有对应的路由对象，路由对象有`path`，`component`，`icon`，`text`等属性
+
+6. `render(){}`对象应该`return()`，括号里面应该有个根标签
+
+7. `<Switch>`里面只会保存一条路由，其他会被删除
+
+8. ```js
+   render() {
+     return (
+         <div>
+           <Switch>
+             <Route path='/home' component={Home}/>
+             <Route path='/detail' component={Detail}/>
+             <Route path='/classify' component={Classify}/>
+             <Route path='/shopCart' component={ShopCart}/>
+             <Route path='/personal' component={Personal}/>
+             <Redirect to='/home'/>{/*重定向*/}
+           </Switch>
+           <FooterNav navList={this.navList}/>
+         </div>
+     )
+   }
+   ```
+
+9. ```js
+   // 在FooterNav使用propTypes接受navList
+   import PropTypes from 'prop-types'
+   static propTypes = {
+     navList: PropTypes.array.isRequired
+   };
+   ```
+
+10. 在`footer-nav.jsx`里面把`<a>`替换成`react-router-dom`的`<NavLink>`
+
+11. `footer-nav.jsx`以`withRouter(FooterNav)`形式暴露
+
+12. ```js
+    // 如何在原有的className上添加一个新的class( 类 )
+    // 使用字符串模版
+    {`原有的类${三元运算符}`} // 字符里面的空格有效
+    ```
 ## `footer-nav`
 
 - 首先要在`mian.jsx`( 应用主界面路由组件 )里面定义好`navList`( 数组 )，
