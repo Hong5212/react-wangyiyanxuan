@@ -57,7 +57,7 @@ export default class Main extends Component {
           <Route path='/shopCart' component={ShopCart}/>
           <Route path='/classify' component={Classify}/>
           <Route path='/personal' component={Personal}/>
-          <Redirect to='/home'/>
+          <Redirect to='/detail'/>
         </Switch>
         <FooterNav navList={this.navList}/>
       </div>

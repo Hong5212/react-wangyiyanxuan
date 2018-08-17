@@ -6,9 +6,10 @@
 import {
   DATA,
   BANNER,
-  HOME
+  HOME,
+  DETAIL,
+  CLASSIFY
 } from './action-types'
-
 
 // 产生data状态的reducer
 const initUser = {
@@ -32,6 +33,14 @@ export default function getAllData(state = initUser, action) {
     case HOME:
       const home = action.data;
       return {...state,home};
+
+    case DETAIL:
+      const detail = action.data;
+      return {...state,detail};
+
+    case CLASSIFY:
+      const categories = action.data;
+      return {...state,categories};
 
     default:
       return state;

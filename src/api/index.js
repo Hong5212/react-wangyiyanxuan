@@ -13,3 +13,9 @@ export const reqBanner = () => ajax('/banner');
 
 // 请求home的allData数据
 export const reqHome = () => ajax('/home');
+
+// 请求识物(detail)的数据
+export const reqDetail = () => ajax('/detail');
+
+// 请求分类(classify)的数据
+export const reqClassify = () => ajax('/nav');

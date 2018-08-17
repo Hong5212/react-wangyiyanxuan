@@ -305,7 +305,6 @@ class Home extends Component {
         </div>
         {/*商品列表*/}
         <GoodList goodGrides={home.cateList}/>
-
       </div>
     )
   }

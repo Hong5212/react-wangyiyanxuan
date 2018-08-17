@@ -2,14 +2,14 @@
 主界面的底部导航
  */
 import React, {Component} from 'react'
-import Proptypes from 'prop-types'
+import propTypes  from 'prop-types'
 import {withRouter, NavLink} from 'react-router-dom'
 
 import './footer-nav.styl'
 
 class FooterNav extends Component {
   static propTypes = {
-    navList: Proptypes.array.isRequired
+    navList: propTypes.array.isRequired
   };
 
   render() {

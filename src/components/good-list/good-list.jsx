@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
-import Proptypes from 'prop-types'
+import propTypes from 'prop-types'
 
 import './good-list.styl'
 
 class GoodList extends Component {
   static propTypes = {
-    goodGrides: Proptypes.array
+    goodGrides: propTypes.array
   };
   render() {
     const {goodGrides} = this.props;
