@@ -1,0 +1,409 @@
+/*头部*/
+.home-header
+  position fixed!important
+  top 0
+  z-index 100
+  background-color #fff
+  .logo-search
+    padding 0.2rem 0.16rem
+    display flex
+    align-items center
+    .logo
+      width 1.38rem
+      height 0.4rem
+      margin-right 0.2rem
+      background url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-11d65342f9.png)
+      background-repeat no-repeat
+      background-size contain
+      background-position center
+      text-indent -9999px
+    .search
+      width 5.32rem
+      height 0.56rem
+      background-color #ededed
+      border-radius .10667rem
+      color #666
+      display flex
+      align-items center
+      justify-content center
+      .iconfont
+        margin-right 0.05rem
+  .header-tabs
+    height 100%
+    width 100%
+    overflow hidden
+    display flex
+    .tab
+      flex-shrink 0
+      flex-flow row nowrap
+      align-items center
+      justify-content center
+      z-index 1
+      text-align center
+      padding 0 0.4rem
+      > span
+        display inline-block
+        padding 0 0.35rem
+        line-height 0.6rem
+        text-align center
+        &.active
+          color #b4282d
+          border-bottom 0.01rem solid #b4282d
+/*轮播图*/
+.swiper-container
+  width 100%
+  height 100%
+  padding-top 1.2rem!important
+  .swiper-wrapper
+    width 100%
+    height 100%
+    //float left
+    .swiper-slide
+      display flex
+      justify-content center
+      align-items flex-start
+      flex-wrap wrap
+      img
+        display block
+        width 100%
+        text-align center
+        padding-bottom 0.1rem
+  .swiper-pagination
+    > span
+      &.swiper-pagination-bullet
+        margin 0 .13rem 0 0
+        width .5rem
+        height .05rem
+        display inline-block
+        background #fff
+        opacity .4
+        border-radius 0
+      &.swiper-pagination-bullet-active
+        background #fff
+        opacity 1
+        border-radius 0
+/*网易自营品牌*/
+.indexServeicPolicy
+  width 100%
+  height .72rem
+  display flex
+  flex-flow row nowrap
+  align-items center
+  zoom 1
+  .item
+    flex 1
+    float left
+    margin-left 0.2rem
+    >a
+      display inline-block
+      vertical-align center
+      height .4rem
+      img
+        width .3rem
+        height .3rem
+        vertical-align middle
+      .text
+        color #333
+        line-height .5rem
+        display inline-block
+        vertical-align middle
+/*制造商*/
+.maker-header
+  display flex
+  align-items center
+  justify-content center
+  height 1.4rem
+  >.more
+    font-size .36rem
+    color #333
+.maker-list
+  position relative
+  margin 0 .2rem
+  height 6.2rem
+  overflow hidden
+  .item
+    display inline-block
+    position relative
+    margin .04rem
+    width 3.4rem
+    height 3.1rem
+    overflow hidden
+    background-color #f4f4f4
+    >a
+      width 100%
+      height 100%
+      .cnt
+        position absolute
+        left 0
+        top 0
+        padding .2rem 0 0 .2rem
+        width 100%
+        z-index 4
+        .title
+          text-overflow ellipsis
+          white-space nowrap
+          overflow hidden
+          color #333
+          font-size .3rem
+          line-height .45rem
+          margin-bottom .08rem
+        .price1
+          color #333
+          font-size .37rem
+          line-height .45rem
+        .price2
+          color #333
+          font-size .32rem
+          line-height .45rem
+      >img
+        width 100%
+        height 100%
+/*新品首发*/
+.indexFloor
+  margin-top .2rem
+  .new-hd
+    background url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/bitmap-d4f7b37e32.png);
+    background-size 7.5rem 3.4rem
+    height 3.4rem
+    margin-bottom .4rem
+    position relative
+    display flex
+    justify-content center
+    align-items center
+    font-size .4rem
+    >.more
+      display block
+      text-align center
+      color #8BA0B6
+      .all
+        position relative
+        margin .2rem auto 0
+        width 3.2rem
+        font-size .37rem
+        line-height .74rem
+        background #D8E5F1
+  /*商品格子*/
+  .goodGrid-newItem
+    overflow hidden
+    //margin-bottom 2rem
+    .list
+      float left
+      display flex
+      //border 1px solid #999
+      height 4.5rem
+      .item
+        flex-shrink 0
+        flex-flow row nowrap
+        align-items center
+        justify-content center
+        z-index 1
+        text-align center
+        margin-left .4rem
+        width 3rem
+        float left
+        position relative
+        overflow hidden
+        //border 1px solid red
+        .good
+          display block
+          width 100%
+          .hd
+            background-color #f4f4f4
+            img
+              display block
+              top 0
+              left 0
+              width 3rem
+              height 2.8rem
+          .tagWraper
+            width 100%
+            z-index 1
+            margin 0 0 .2rem
+            height .4rem
+            padding-left .13rem
+            display flex
+            flex-direction row nowrap
+            .status
+              height .3rem
+              padding .06rem
+              margin .06rem
+              line-height .26rem
+              text-align center
+              color #fff
+              font-size .2rem
+              border-radius .02rem
+            .anniversary
+              background-color #e5686d
+            .gradientPrice
+              background-color #f48f18
+          .name
+            margin-bottom .13rem
+            padding 0 .13rem
+            font-size .28rem
+            line-height .28rem
+            margin-top .13rem
+            text-align left
+            text-overflow ellipsis
+            overflow hidden
+            white-space nowrap
+            color #333
+          .newItemDesc
+            display block
+            padding 0 .13rem
+            font-size .2rem
+            color #7f7f7f
+            line-height .4rem
+            text-overflow ellipsis
+            overflow hidden
+            white-space nowrap
+            text-align left
+          .price
+            padding 0 .13rem
+            font-size .2rem
+            line-height 1
+            text-align left
+            color #b4282d
+/*人气推荐 · 好物精选*/
+.popularItemList
+  .new-hd
+    background url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/bitmap2-d626e0b52a.png)
+    >.more
+      color #B4A078
+      .all
+        background #F4E9CB
+/*严选限时购*/
+.indexFlash
+  padding .4rem
+  margin-bottom .26rem
+  display flex
+  .left-item
+    display flex
+    flex-direction column
+    padding-top 1rem
+    >.title
+      font-size .34rem
+      line-height .24rem
+      margin-bottom .16rem
+      color #333
+      letter-spacing .16rem
+    >.countdown
+      display inline
+      .hours,.mins,.secs
+        display inline-block
+        line-height .47rem
+        text-align center
+        width .6rem
+        height .5rem
+        font-size .4rem
+        color #ffffff
+        //border-radius 0.1rem
+        background #444
+      .colon
+        color #333
+        font-size .3rem
+        width .15rem
+        display inline-block
+        text-align center
+        font-weight 700
+    .next-title
+      margin-top .4rem
+      color #333
+      font-size .3rem
+      line-height .3rem
+      height .3rem
+
+  .right-item
+    margin-left 1rem
+    width 3.2rem
+    height 3.2rem
+    position relative
+    img
+      width 100%
+      height 100%
+    .price
+      height 1rem
+      width 1rem
+      //background red
+      position absolute
+      right .26rem
+      bottom .48rem
+      background-color rgba(244, 143, 24, 95)
+      border-radius 100%
+      color #ffffff
+      text-align center
+      display flex
+      flex-direction column
+      justify-content center
+      .price-now28,.price-origin28
+        font-size .3rem
+        line-height .3rem
+        height .3rem
+      .price-origin28
+        text-decoration line-through
+
+/*福利社*/
+.sale
+  width 100%
+  height 3rem
+  margin-bottom .2rem
+  >a
+    width 100%
+    height 100%
+    display block
+    background url(http://yanxuan.nosdn.127.net/a3ea2d1108c94c7dece05eddf95f6df5.jpg)
+    background-repeat no-repeat
+    background-size contain
+/*专题精选*/
+.choice
+  //margin-bottom 3rem
+  >.hd
+    background-size 7.5rem 3.4rem
+    height 1.4rem
+    position relative
+    display flex
+    justify-content center
+    align-items center
+    font-size .4rem
+  >.indexTopics-slide
+    padding 0 .4rem .48rem
+    overflow hidden
+    .list
+      //width 5.8rem
+      float left
+      display flex
+      flex-direction row nowrap
+      >.item
+        margin-left .1rem
+        >.imgWrap
+          display block
+          width 100%
+          height 2.8rem
+          border-radius 0.1rem
+          overflow hidden
+          >img
+            width 100%
+            position relative
+            left 50%
+            transform translateX(-50%)
+        .line1
+          height .8rem
+          margin-bottom .02rem
+          zoom 1
+          >.title
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+            float left
+            font-size .28rem
+          >.price
+            float right
+            font-size .3rem
+            color #b4282d
+          >.desc
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+            width 4.6rem
+            font-size .2rem
+            line-height .5rem
+            color #7F7F7F
