@@ -9,6 +9,7 @@ import Detail from "../detail/detail";
 import ShopCart from "../shopCart/shopCart";
 import Classify from "../classify/classify";
 import Personal from "../personal/personal";
+import Login from "../login/login";
 import FooterNav from '../../components/footer-nav/footer-nav'
 
 import '../../assets/js/index'
@@ -57,7 +58,8 @@ export default class Main extends Component {
           <Route path='/shopCart' component={ShopCart}/>
           <Route path='/classify' component={Classify}/>
           <Route path='/personal' component={Personal}/>
-          <Redirect to='/detail'/>
+          <Route path='/login' component={Login}/>
+          <Redirect to='/personal'/>
         </Switch>
         <FooterNav navList={this.navList}/>
       </div>

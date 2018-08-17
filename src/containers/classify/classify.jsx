@@ -1,18 +1,35 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import BScroll from 'better-scroll'
 
 import {getClassifyData} from '../../redux/actions'
+import ListItem from '../../components/list-item/list-item'
 
 import './classify.styl'
 
 class Classify extends Component {
-  componentDidMount(){
-    this.props.getClassifyData()
+  state = {
+    currentIndex: 0
+  };
+
+  componentDidMount() {
+    this.props.getClassifyData(() => {
+      new BScroll('.m-cateNavVertWrap', {
+        click: true
+      })
+    })
   }
+
+  changeIndex = index => {
+    this.setState({
+      currentIndex : index
+    })
+  };
 
   render() {
     const {categories} = this.props;
-    // console.log(categories);
+
+    let {currentIndex} = this.state
 
     return (
       <div className="j-categoryList">
@@ -32,18 +49,19 @@ class Classify extends Component {
           <ul className="m-cateNavVert">
             {
               categories && categories.map((category, index) => {
-                return(
-                  <li className="item" key={index}>
+                return (
+                  <li className={`item ${index === currentIndex?'active':''}`}
+                      key={index} onClick={() => this.changeIndex(index)}>
                     <a className="txt">{category.name}</a>
                   </li>
                 )
               })
             }
           </ul>
+        </div>
+        {/*右侧列表*/}
+        <ListItem categories={categories} currentIndex={currentIndex}/>
       </div>
-    /*右侧列表*/
-    {/*<ListItem categories={categories}/>*/}
-  </div>
     )
   }
 }

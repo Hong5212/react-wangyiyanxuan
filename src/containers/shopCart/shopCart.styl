@@ -1,0 +1,94 @@
+@import "../../assets/css/mixins.styl"
+
+.shopCartWrap
+  overflow hidden
+  /*购物车headerTop*/
+  .m-hd
+    position fixed!important
+    left 0
+    top 0
+    z-index 5
+    width 100%
+    bottom-border-1px(#ccc)
+    .m-cartHd
+      height .88rem
+      padding 0 .4rem
+      line-height .88rem
+      text-align center
+      background-color #fff
+      position relative
+      .logo
+        display inline-block
+        font-size .36rem
+      .right
+        position absolute
+        top 0
+        right .3rem
+        font-size .3rem
+        .cart-coupon
+          margin-right .27rem
+          color #B4282D
+
+  /*服务质量*/
+  .m-servicePolicy
+    margin-top .88rem
+    position relative
+    z-index 1
+    height .7rem
+    padding 0 .3rem
+    background-color #f4f4f4
+    display flex
+    flex-flow row nowrap
+    align-items center
+    justify-content space-between
+    span
+      color #666
+      font-size .24rem
+  /*购物车大logo和登录*/
+  .m-defaultPage
+    position fixed
+    top 0
+    left 0
+    bottom 0
+    z-index 0
+    width 100%
+    background-color #f4f4f4
+    text-align center
+    >.container
+      position absolute
+      top -.5rem
+      right 0
+      bottom 0
+      left 0
+      height 3rem
+      margin auto
+      .img
+        background url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-a8fe3f12e5.png)
+        display inline-block
+        vertical-align middle
+        width 2.48rem
+        height 2.48rem
+        margin-bottom .08rem
+        background-size 2.48rem
+        background-position center
+        background-repeat no-repeat
+      .txt
+        font-size .28rem
+        line-height 1
+        color #7f7f7f
+        .noCart-login
+          margin-top -.2rem
+          .noCart-title
+            margin-bottom .5rem
+            font-size .28rem
+            line-height 1
+            color #999
+          .noCart-btn
+            margin auto
+            width 4.8rem
+            height .92rem
+            font-size .3rem
+            line-height .92rem
+            color #fff
+            background-color #b4282d
+            border-radius .03rem
