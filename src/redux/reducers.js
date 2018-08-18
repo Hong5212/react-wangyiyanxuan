@@ -28,6 +28,7 @@ export default function getAllData(state = initUser, action) {
 
     case BANNER:
       const homeBanners = action.data;
+      //
       return {...state,homeBanners};
 
     case HOME:
