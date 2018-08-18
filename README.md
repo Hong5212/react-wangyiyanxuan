@@ -95,3 +95,8 @@
 ## `Swiper`
 
 - 不需要满足滑动要求，只需要应用`swiper`相对应的类
+
+## `login`
+
+- 添加`on`( 类 )表示显示，不添加默认隐藏
+- 如果添加类`on`不其效果，就在标签里面添加`style={display:loginType===0或者1:'block':'none'}`
